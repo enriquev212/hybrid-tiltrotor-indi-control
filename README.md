@@ -56,15 +56,13 @@ how sensitive that behaviour is to cable and vehicle parameters.
   INDI reduces PID tracking RMSE substantially, while real-flight logs show
   comparable tracking with slightly lower command activity.
 
-## Start Here
+## Documentation
 
-| Document | Why open it |
-| --- | --- |
-| [Research overview](docs/research-overview.md) | Problem, modelling approach and contribution narrative - the five-minute version of the project. |
-| [Technical summary](docs/technical-summary.md) | The controller itself: cascaded INDI loops, local effectiveness model and constrained WLS allocation. |
-| [Results summary](docs/results-summary.md) | The numbers behind the headline results: envelope limits, tethered RMSE, the ±15% sensitivity study and the PID-vs-INDI benchmark. |
-| [Contribution summary](docs/contribution-summary.md) | What this collaborative project covers and what the public version represents. |
-| [References](docs/references.md) | Bibliography used in the report. |
+- [Research overview, modelling approach, and project motivation](docs/research-overview.md)
+- [Technical summary of the cascaded INDI/WLS control architecture](docs/technical-summary.md)
+- [Results, sensitivity study, and PID-vs-INDI benchmark](docs/results-summary.md)
+- [Contribution scope and public repository notes](docs/contribution-summary.md)
+- [References](docs/references.md)
 
 ## Representative Figures
 
