@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or reference this project material, please cite the associated research project report."
+title: "INDI Control for Hybrid Tilt-Rotor UAVs"
+authors:
+  - family-names: "Valverde Sacristán"
+    given-names: "Enrique"
+  - family-names: "Furiati Aguilar"
+    given-names: "José Ricardo"
+abstract: "Public research-project material on cascaded INDI/WLS control for a hybrid tilt-rotor UAV in free and ground-anchored tethered flight."
+date-released: 2026-06-01
+url: "https://github.com/enriquev212/hybrid-tiltrotor-indi-control"
+preferred-citation:
+  type: report
+  title: "Incremental Nonlinear Dynamic Inversion (INDI) Control for Hybrid UAVs"
+  authors:
+    - family-names: "Valverde Sacristán"
+      given-names: "Enrique"
+    - family-names: "Furiati Aguilar"
+      given-names: "José Ricardo"
+  year: 2026
+  institution:
+    name: "ISAE-SUPAERO / ENAC"

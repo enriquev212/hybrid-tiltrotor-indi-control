@@ -10,7 +10,7 @@ Incremental Nonlinear Dynamic Inversion (INDI) Control for Hybrid UAVs
 
 ## Authors
 
-Enrique Valverde Sacristan and Jose Ricardo Furiati Aguilar
+Enrique Valverde Sacristán and José Ricardo Furiati Aguilar
 
 ## Chapter Map
 
