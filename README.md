@@ -1,70 +1,93 @@
 # INDI Control for Hybrid Tilt-Rotor UAVs
 
-Compact public entry point for a Research Project on cascaded Incremental Nonlinear Dynamic Inversion (INDI) control for hybrid tilt-rotor UAVs.
+Simulation and control study of a single-wing quad-tiltrotor UAV in free and ground-anchored tethered flight. The project builds a nonlinear vehicle+tether model and evaluates a cascaded Incremental Nonlinear Dynamic Inversion (INDI) controller with weighted least-squares (WLS) allocation over rotor thrusts and tilt angles.
 
-This repository is intended for quick external review: it includes the full RP report, the final defense deck, a short technical summary, and a small set of representative visuals. It intentionally omits the full simulator source, detailed controller implementation, tuning files, and raw logs.
+This repository is designed as a compact technical entry point for a CV or application link: it includes the full report, the final defense deck, a curated explanation of the work, and only a few representative figures. Source code, tuning files and raw logs are intentionally not published.
 
 ![Real simulation view of the tilt-rotor model](docs/assets/hero/simulation-view.gif)
 
-## Project Scope
+## Project Context
 
-Hybrid tilt-rotor UAVs combine rotor-borne hover capability with fixed-wing lift in forward flight. This makes them attractive for longer-endurance missions, but difficult to control: the vehicle changes behavior across hover, transition, and cruise, while actuator limits and aerodynamic effects strongly influence the control allocation problem.
-
-The project studied:
-
-- 6 DoF rigid-body dynamics of a fixed-wing quad-tiltrotor;
-- cascaded INDI control for trajectory tracking;
-- weighted least-squares actuator allocation;
-- aerodynamic lift and actuator-limit effects;
-- wind and tether/cable disturbances;
-- benchmark comparisons and cooperative payload-transport concepts.
-
-## Contribution
-
-The public material focuses on the parts that can be shown without releasing the full collaborative implementation:
-
-- cascaded INDI control structure;
-- mapping from position/velocity tracking errors to virtual acceleration commands;
-- local control-effectiveness modelling;
-- weighted least-squares allocation under actuator bounds and preferences;
-- interpretation of tracking, control-effort, and stability results;
-- selected figures prepared from the Research Project material.
-
-## Documentation
-
-| Document | Purpose |
+| Item | Details |
 |---|---|
-| [Full report](docs/report/indi-research-project-report.pdf) | Complete Research Project report |
-| [Defense deck](docs/slides/indi-hybrid-uav-defense.pptx) | Final PowerPoint defense presentation |
-| [Contribution summary](docs/contribution-summary.md) | Role and contribution scope |
-| [Technical summary](docs/technical-summary.md) | Architecture-level technical explanation |
+| Program | MSc Aerospace Engineering, Aerospace Systems and Control |
+| Institutions | ISAE-SUPAERO and ENAC |
+| Authors | Enrique Valverde Sacristan and Jose Ricardo Furiati Aguilar |
+| Supervisors | Pr. Murat Bronz, Dr. Mauro Villanueva-Aguado, Pr. Yves Briere |
+| Date | June 2026 |
 
-## Selected Figures
+## Start Here
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="docs/assets/figures/control-architecture.png" alt="INDI control architecture">
-      <br><strong>Cascaded INDI architecture</strong>
-    </td>
-    <td width="50%">
-      <img src="docs/assets/figures/baseline-cruise.png" alt="Cruise baseline tracking">
-      <br><strong>Cruise tracking response</strong>
-    </td>
-  </tr>
-</table>
+| Artifact | Why open it |
+|---|---|
+| [Full report](docs/report/indi-research-project-report.pdf) | Complete RP report, modelling, controller design, simulation setup, results and bibliography |
+| [Defense deck](docs/slides/indi-hybrid-uav-defense.pptx) | Final PowerPoint presentation used to explain the project visually |
+| [Research overview](docs/research-overview.md) | Problem, method and contribution narrative distilled from the report and deck |
+| [Results summary](docs/results-summary.md) | Key quantitative findings from the free-flight, tethered-flight and benchmark studies |
+| [References](docs/references.md) | Bibliography used in the report, without mirroring third-party PDFs |
 
-Only the most representative visuals are shown on this page. The full report and defense deck are included above; implementation files remain excluded.
+## Research Problem
 
-## Omitted Material
+Hybrid tilt-rotor UAVs combine VTOL operation with fixed-wing cruise efficiency, but their control effectiveness changes strongly across hover, transition and cruise. The same airframe must coordinate rotor thrust, rotor tilt, aerodynamic lift and attitude while respecting actuator limits.
 
-This public overview does not include:
+The longer-term motivation is cooperative aerial transport: several hybrid UAVs carrying a suspended payload through cables. Before reaching the multi-UAV case, this project studies the building block of a single hybrid UAV attached to a ground-anchored tether, where the cable introduces force, moment, slack/taut transitions and oscillatory load effects.
 
-- full Python simulator source;
-- detailed controller implementation files;
-- configuration and tuning files;
+## Technical Scope
+
+The RP covers:
+
+- six-degree-of-freedom rigid-body modelling on SO(3);
+- tilt-rotor propulsion and actuator dynamics;
+- fixed-wing aerodynamic effects over a wide angle-of-attack range;
+- ground-anchored segmented cable model with tension-only spring-damper links;
+- cascaded INDI guidance and stabilization loops;
+- constrained WLS allocation for four rotor thrusts and two tilt angles;
+- free-flight envelope analysis, nominal tethered flight, cable sensitivity and actuator-effort comparison;
+- auxiliary PID-vs-INDI quadrotor benchmark using ENAC indoor flight data.
+
+## Main Findings
+
+- In free flight, the controller tracks circular references within a bounded envelope, limited by airspeed near 14 m/s and lateral acceleration near 12 m/s2.
+- In nominal tethered flight, the UAV tracks the circular orbit accurately while the cable behaves as a structured periodic disturbance.
+- The cable is not just an added load: it increases thrust demand in hover, but can reduce mean thrust in cruise by contributing inward force toward the anchor.
+- A +/- 15% cable sensitivity study shows thin robustness margins. Cable stiffness, cable length, cable linear density and vehicle mass are stability-critical; damping and diameter are weaker in the tested range.
+- The quadrotor benchmark supports the INDI implementation path: in simulation INDI reduces PID tracking RMSE substantially, while real-flight logs show comparable tracking with slightly lower command activity.
+
+## Representative Figures
+
+### Cascaded INDI/WLS Architecture
+
+<img src="docs/assets/figures/control-architecture.png" alt="Cascaded INDI control architecture">
+
+### Nominal Tethered Orbit
+
+<img src="docs/assets/figures/nominal-tethered-flight.png" alt="Nominal tethered flight tracking error and cable tension">
+
+### Cable Sensitivity and Stability
+
+<img src="docs/assets/figures/cable-sensitivity-stability.png" alt="Closed-loop stability map under cable and vehicle parameter perturbations">
+
+## Repository Structure
+
+```text
+docs/
+  research-overview.md      Problem, modelling approach, INDI architecture and findings
+  results-summary.md        Quantitative summary of the main results
+  references.md             Report bibliography
+  report/                   Complete RP report PDF
+  slides/                   Final defense PowerPoint
+  assets/                   Curated public figures and simulation GIF
+```
+
+## Not Included
+
+This public branch does not include:
+
+- full simulator source code;
+- controller implementation files;
 - raw simulation logs or datasets;
-- third-party reference papers;
+- tuning/configuration files;
+- third-party reference PDFs;
 - collaborator files that are not necessary for public context.
 
-The goal is to show the engineering content of the project without publishing material that should remain internal to the collaboration.
+The goal is to show the engineering content of the project while avoiding publication of implementation material that should remain internal to the collaboration.
