@@ -48,21 +48,13 @@ The public material focuses on the parts that can be shown without releasing the
       <br><strong>Cascaded INDI architecture</strong>
     </td>
     <td width="50%">
-      <img src="docs/assets/figures/tiltrotor-regimes.png" alt="Tilt-rotor operating regimes">
-      <br><strong>Hybrid tilt-rotor operating regimes</strong>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
       <img src="docs/assets/figures/baseline-cruise.png" alt="Cruise baseline tracking">
       <br><strong>Cruise tracking response</strong>
     </td>
-    <td width="50%">
-      <p><strong>Public-release note</strong></p>
-      <p>Only the most representative visuals are shown on this page. The full report and defense deck are included above; implementation files remain excluded.</p>
-    </td>
   </tr>
 </table>
+
+Only the most representative visuals are shown on this page. The full report and defense deck are included above; implementation files remain excluded.
 
 ## Omitted Material
 
