@@ -9,7 +9,7 @@ The cable-free vehicle tracks circular references accurately inside a bounded en
 | Limit | Approximate value |
 |---|---:|
 | Maximum reference speed | 14 m/s |
-| Maximum lateral acceleration | 12 m/s2 |
+| Maximum lateral acceleration | 12 m/s² |
 
 Inside the stable region, the vehicle behaves like a coordinated-turn aircraft: bank angle follows the lateral-acceleration demand while pitch remains small and rotor tilt provides forward propulsion.
 
@@ -28,7 +28,7 @@ The tethered UAV tracks the reference orbit after the initial transient. In the 
 
 ## Cable Sensitivity
 
-The cable sensitivity study perturbs one parameter at a time by +/- 15%.
+The cable sensitivity study perturbs one parameter at a time by ±15%.
 
 | Parameter group | Observed effect |
 |---|---|
@@ -49,10 +49,10 @@ The tether changes where effort is spent:
 | Tracking error, cruise window | 0.24% of R | 1.32% of R |
 | Hover total thrust | 9.77 N | 7.36 N |
 | Cruise total thrust | 13.2 N | 16.6 N |
-| Mean rotor tilt | 5.2/6.2 deg | -8.7/-12.0 deg |
-| Rotor-speed command activity | 5.2 rad/s2 | 9.4 rad/s2 |
+| Mean rotor tilt | 5.2/6.2° | -8.7/-12.0° |
+| Rotor-speed command activity | 5.2 rad/s² | 9.4 rad/s² |
 
-The cable increases thrust demand in hover, but during cruise it contributes inward force toward the anchor and reduces the mean thrust required for the circular orbit. It also shifts the rotor-tilt trim by roughly 15 deg.
+The cable increases thrust demand in hover, but during cruise it contributes inward force toward the anchor and reduces the mean thrust required for the circular orbit. It also shifts the rotor-tilt trim by roughly 15°.
 
 ## Quadrotor Benchmark
 

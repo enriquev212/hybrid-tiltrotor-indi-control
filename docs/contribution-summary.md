@@ -16,4 +16,4 @@ This repository presents a collaborative academic Research Project. The report a
 
 The repository includes the complete report and final presentation because they are the intended academic deliverables. It does not include the simulator source, controller implementation files, tuning/configuration files or raw logs.
 
-This keeps the repository useful for external technical review without publishing implementation material from the broader collaboration.
+This keeps the repository focused on public technical documentation and selected results.

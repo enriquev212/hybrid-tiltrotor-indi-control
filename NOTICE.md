@@ -6,4 +6,4 @@ Architecture-level descriptions, selected figures, the RP report, the final defe
 
 No open-source license is currently included. Unless the project owners add a license or grant permission separately, code reuse and redistribution rights should not be assumed.
 
-Do not add private simulation logs, tuning files, full source code, personal data, third-party papers, or collaborator files without permission. Third-party reference PDFs are intentionally omitted; only bibliographic entries are listed.
+Do not add private simulation logs, tuning files, full source code, personal data, or third-party papers without permission. Third-party reference PDFs are intentionally omitted; only bibliographic entries are listed.

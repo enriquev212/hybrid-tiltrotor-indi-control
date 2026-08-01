@@ -29,7 +29,7 @@ The report evaluates the controller through:
 
 - a cable-free baseline and free-flight envelope study;
 - a nominal ground-anchored tethered orbit;
-- one-at-a-time +/- 15% cable and vehicle parameter sensitivity;
+- one-at-a-time ±15% cable and vehicle parameter sensitivity;
 - actuator effort analysis comparing free and tethered cruise;
 - an auxiliary real-flight quadrotor PID-vs-INDI benchmark.
 

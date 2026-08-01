@@ -44,7 +44,7 @@ The report follows the same story as the defense deck:
 2. Explain the INDI principle and cascaded implementation.
 3. Validate the controller first without the tether.
 4. Add the ground-anchored tether and evaluate nominal tracking.
-5. Perturb cable and vehicle parameters by +/- 15% to study robustness.
+5. Perturb cable and vehicle parameters by ±15% to study robustness.
 6. Compare actuator demand with and without the tether.
 7. Add a quadrotor PID-vs-INDI benchmark as a hardware-oriented implementation check.
 

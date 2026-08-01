@@ -6,6 +6,8 @@ This public version gathers the main academic deliverables and a concise technic
 
 ![Real simulation view of the tilt-rotor model](docs/assets/hero/simulation-view.gif)
 
+**Headline results:** stable circular tracking up to ~14 m/s | 0.087 m nominal tethered RMSE | ±15% cable/vehicle sensitivity study | 70% lower simulated RMSE than PID in the quadrotor benchmark.
+
 ## Project Context
 
 | Item | Details |
@@ -47,10 +49,10 @@ The RP covers:
 
 ## Main Findings
 
-- In free flight, the controller tracks circular references within a bounded envelope, limited by airspeed near 14 m/s and lateral acceleration near 12 m/s2.
+- In free flight, the controller tracks circular references within a bounded envelope, limited by airspeed near 14 m/s and lateral acceleration near 12 m/s².
 - In nominal tethered flight, the UAV tracks the circular orbit accurately while the cable behaves as a structured periodic disturbance.
 - The cable is not just an added load: it increases thrust demand in hover, but can reduce mean thrust in cruise by contributing inward force toward the anchor.
-- A +/- 15% cable sensitivity study shows thin robustness margins. Cable stiffness, cable length, cable linear density and vehicle mass are stability-critical; damping and diameter are weaker in the tested range.
+- A ±15% cable sensitivity study shows thin robustness margins. Cable stiffness, cable length, cable linear density and vehicle mass are stability-critical; damping and diameter are weaker in the tested range.
 - The quadrotor benchmark supports the INDI implementation path: in simulation INDI reduces PID tracking RMSE substantially, while real-flight logs show comparable tracking with slightly lower command activity.
 
 ## Representative Figures
@@ -81,13 +83,10 @@ docs/
 
 ## Not Included
 
-This public branch does not include:
+The repository focuses on the public technical documentation and selected results; implementation files, tuning data and raw logs are intentionally omitted.
 
 - full simulator source code;
 - controller implementation files;
 - raw simulation logs or datasets;
 - tuning/configuration files;
 - third-party reference PDFs;
-- collaborator files that are not necessary for public context.
-
-The goal is to show the engineering content of the project while avoiding publication of implementation material that should remain internal to the collaboration.
