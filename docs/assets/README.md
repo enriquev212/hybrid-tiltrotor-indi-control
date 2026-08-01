@@ -4,7 +4,7 @@ Small curated set of public figures from the INDI RP material.
 
 ## Included
 
-- `hero/cooperative-payload-3uav.gif`: cooperative suspended-payload concept.
+- `hero/simulation-view.gif`: real simulator view of the tilt-rotor model.
 - `figures/control-architecture.png`: cascaded INDI control architecture.
 - `figures/tiltrotor-regimes.png`: tilt-rotor operating regimes.
 - `figures/quadrotor-tracking-overview.png`: benchmark and real-flight tracking overview.

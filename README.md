@@ -4,7 +4,7 @@ Public overview of a Research Project on cascaded Incremental Nonlinear Dynamic 
 
 This repository presents the project at architecture and results level. It intentionally omits the full simulator source, detailed controller implementation, tuning files, raw logs, complete report, and complete defense deck.
 
-![Cooperative payload transport concept](docs/assets/hero/cooperative-payload-3uav.gif)
+![Real simulation view of the tilt-rotor model](docs/assets/hero/simulation-view.gif)
 
 ## Project Scope
 
