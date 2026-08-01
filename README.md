@@ -24,7 +24,7 @@ This public version gathers the main academic deliverables and a concise technic
 | [Defense deck](docs/slides/indi-hybrid-uav-defense.pptx) | Final PowerPoint presentation used to explain the project visually |
 | [Research overview](docs/research-overview.md) | Problem, method and contribution narrative distilled from the report and deck |
 | [Results summary](docs/results-summary.md) | Key quantitative findings from the free-flight, tethered-flight and benchmark studies |
-| [References](docs/references.md) | Bibliography used in the report, without mirroring third-party PDFs |
+| [References](docs/references.md) | Bibliography used in the report |
 
 ## Research Problem
 

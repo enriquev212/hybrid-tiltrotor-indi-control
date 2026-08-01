@@ -1,6 +1,6 @@
 # References
 
-This bibliography is taken from the final RP report. Third-party papers and PDFs are not included in this repository.
+This bibliography is taken from the final RP report.
 
 1. G. J. J. Ducard and M. Allenspach, "Review of designs and flight control techniques of hybrid and convertible VTOL UAVs," Aerospace Science and Technology, vol. 118, p. 107035, 2021.
 2. S. Sieberling, Q. P. Chu, and J. A. Mulder, "Robust flight control using incremental nonlinear dynamic inversion and angular acceleration prediction," Journal of Guidance, Control, and Dynamics, vol. 33, no. 6, pp. 1732-1742, 2010.
