@@ -2,7 +2,7 @@
 
 Simulation and control study of a single-wing quad-tiltrotor UAV in free and ground-anchored tethered flight. The project builds a nonlinear vehicle+tether model and evaluates a cascaded Incremental Nonlinear Dynamic Inversion (INDI) controller with weighted least-squares (WLS) allocation over rotor thrusts and tilt angles.
 
-This repository is designed as a compact technical entry point for a CV or application link: it includes the full report, the final defense deck, a curated explanation of the work, and only a few representative figures. Source code, tuning files and raw logs are intentionally not published.
+This public version gathers the main academic deliverables and a concise technical overview of the project. It includes the full report, the final defense deck and selected figures, while implementation source code, tuning files and raw logs are kept out of scope.
 
 ![Real simulation view of the tilt-rotor model](docs/assets/hero/simulation-view.gif)
 
