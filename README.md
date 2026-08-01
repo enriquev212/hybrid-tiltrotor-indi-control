@@ -22,8 +22,10 @@ than PID in the quadrotor benchmark.
 
 ## Project Materials
 
-[Full report PDF](docs/report/indi-research-project-report.pdf) |
-[Final presentation PPTX](docs/slides/indi-hybrid-uav-defense.pptx)
+| Artifact | Why open it |
+| --- | --- |
+| [Full report PDF](docs/report/indi-research-project-report.pdf) | Complete research project report, including modelling, controller design, simulation setup, results and bibliography. |
+| [Final presentation PPTX](docs/slides/indi-hybrid-uav-defense.pptx) | Final defense deck with the visual narrative, architecture figures and main result plots. |
 
 ## Core Idea
 
@@ -39,15 +41,37 @@ tension disturbances. The project evaluates whether cascaded INDI with
 constrained WLS allocation can keep the vehicle on a circular tethered orbit and
 how sensitive that behaviour is to cable and vehicle parameters.
 
+## Key Findings
+
+- In free flight, the controller tracks circular references within a bounded
+  envelope, limited by airspeed near 14 m/s and lateral acceleration near
+  12 m/s².
+- In nominal tethered flight, the UAV tracks the circular orbit accurately while
+  the cable behaves as a structured periodic disturbance.
+- The cable is not just an added load: it increases thrust demand in hover, but
+  can reduce mean thrust in cruise by contributing inward force toward the
+  anchor.
+- A ±15% cable sensitivity study shows thin robustness margins. Cable stiffness,
+  cable length, cable linear density and vehicle mass are stability-critical;
+  damping and diameter are weaker in the tested range.
+- The quadrotor benchmark supports the INDI implementation path: in simulation
+  INDI reduces PID tracking RMSE substantially, while real-flight logs show
+  comparable tracking with slightly lower command activity.
+
 ## Documentation
 
-- [Research overview](docs/research-overview.md)
-- [Technical summary](docs/technical-summary.md)
-- [Results summary](docs/results-summary.md)
-- [Contribution summary](docs/contribution-summary.md)
-- [References](docs/references.md)
-- [Report notes](docs/report/README.md)
-- [Slides notes](docs/slides/README.md)
+- [Research overview](docs/research-overview.md) - context, problem statement,
+  modelling approach and contribution narrative.
+- [Technical summary](docs/technical-summary.md) - compact description of the
+  vehicle model, cascaded INDI loops and WLS allocation.
+- [Results summary](docs/results-summary.md) - quantitative findings from the
+  free-flight, tethered-flight and benchmark studies.
+- [Contribution summary](docs/contribution-summary.md) - public contribution
+  areas and repository scope.
+- [References](docs/references.md) - bibliography used in the report.
+- [Report notes](docs/report/README.md) - chapter map for the complete report.
+- [Slides notes](docs/slides/README.md) - presentation flow for the final
+  defense deck.
 
 ## Representative Figures
 
