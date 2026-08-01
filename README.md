@@ -22,10 +22,8 @@ than PID in the quadrotor benchmark.
 
 ## Project Materials
 
-| Artifact | Why open it |
-| --- | --- |
-| [Full report PDF](docs/report/indi-research-project-report.pdf) | Complete research project report, including modelling, controller design, simulation setup, results and bibliography. |
-| [Final presentation PPTX](docs/slides/indi-hybrid-uav-defense.pptx) | Final defense deck with the visual narrative, architecture figures and main result plots. |
+[Full report PDF](docs/report/indi-research-project-report.pdf) |
+[Final presentation PPTX](docs/slides/indi-hybrid-uav-defense.pptx)
 
 ## Core Idea
 
@@ -58,20 +56,15 @@ how sensitive that behaviour is to cable and vehicle parameters.
   INDI reduces PID tracking RMSE substantially, while real-flight logs show
   comparable tracking with slightly lower command activity.
 
-## Documentation
+## Start Here
 
-- [Research overview](docs/research-overview.md) - context, problem statement,
-  modelling approach and contribution narrative.
-- [Technical summary](docs/technical-summary.md) - compact description of the
-  vehicle model, cascaded INDI loops and WLS allocation.
-- [Results summary](docs/results-summary.md) - quantitative findings from the
-  free-flight, tethered-flight and benchmark studies.
-- [Contribution summary](docs/contribution-summary.md) - public contribution
-  areas and repository scope.
-- [References](docs/references.md) - bibliography used in the report.
-- [Report notes](docs/report/README.md) - chapter map for the complete report.
-- [Slides notes](docs/slides/README.md) - presentation flow for the final
-  defense deck.
+| Document | Why open it |
+| --- | --- |
+| [Research overview](docs/research-overview.md) | Problem, modelling approach and contribution narrative - the five-minute version of the project. |
+| [Technical summary](docs/technical-summary.md) | The controller itself: cascaded INDI loops, local effectiveness model and constrained WLS allocation. |
+| [Results summary](docs/results-summary.md) | The numbers behind the headline results: envelope limits, tethered RMSE, the ±15% sensitivity study and the PID-vs-INDI benchmark. |
+| [Contribution summary](docs/contribution-summary.md) | What this collaborative project covers and what the public version represents. |
+| [References](docs/references.md) | Bibliography used in the report. |
 
 ## Representative Figures
 
