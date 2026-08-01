@@ -1,8 +1,8 @@
 # INDI Control for Hybrid Tilt-Rotor UAVs
 
-Public repository for an MSc research project on cascaded Incremental Nonlinear
-Dynamic Inversion (INDI) control for a hybrid tilt-rotor UAV in free and
-ground-anchored tethered flight.
+Public repository for an MSc research project at ISAE-SUPAERO/ENAC, completed
+in June 2026, on cascaded Incremental Nonlinear Dynamic Inversion (INDI) control
+for a hybrid tilt-rotor UAV in free and ground-anchored tethered flight.
 
 The project studies how a single-wing quad-tiltrotor can coordinate rotor
 thrust, rotor tilt, aerodynamic lift and attitude while rejecting the structured
@@ -23,7 +23,7 @@ than PID in the quadrotor benchmark.
 ## Project Materials
 
 [Full report PDF](docs/report/indi-research-project-report.pdf) |
-[Final presentation PPTX](docs/slides/indi-hybrid-uav-defense.pptx)
+[Final presentation PPTX](https://github.com/enriquev212/hybrid-tiltrotor-indi-control/releases/download/project-materials-v1/indi-hybrid-uav-defense.pptx)
 
 ## Core Idea
 

@@ -13,14 +13,16 @@ research project.
    free-flight, tethered-flight and benchmark studies.
 4. [Full report](report/indi-research-project-report.pdf) - complete academic
    deliverable.
-5. [Defense deck](slides/indi-hybrid-uav-defense.pptx) - final presentation.
+5. [Defense deck](https://github.com/enriquev212/hybrid-tiltrotor-indi-control/releases/download/project-materials-v1/indi-hybrid-uav-defense.pptx) -
+   final presentation.
 6. [References](references.md) - bibliography used in the report.
 
 ## Folder Contents
 
 - `assets/` - curated visual material used by the README.
 - `report/` - complete Research Project report.
-- `slides/` - final PowerPoint defense deck.
+- `slides/` - presentation flow notes. The full PowerPoint deck is distributed
+  through the repository release assets.
 - `contribution-summary.md` - short contribution and collaboration note.
 - `technical-summary.md` - controller-focused technical summary.
 
