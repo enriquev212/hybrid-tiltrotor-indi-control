@@ -26,10 +26,8 @@ The included public figures summarize:
 
 - cascaded INDI control architecture;
 - hover, transition, and cruise regimes;
-- benchmark tracking behavior;
-- cruise trajectory tracking;
-- cruise control effort.
+- cruise trajectory tracking.
 
 ## Redaction Note
 
-Detailed source code, tuning values, internal implementation files, raw logs, and complete project deliverables are intentionally omitted from this public overview.
+Detailed source code, tuning values, internal implementation files, and raw logs are intentionally omitted from this public overview.

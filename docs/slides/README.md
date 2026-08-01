@@ -1,7 +1,7 @@
 # Slides
 
-The complete RP defense deck is not mirrored in this public branch.
+This folder contains the final PowerPoint defense deck:
 
-Only a small number of representative visuals exported from the presentation material are included under `docs/assets/`.
+- [indi-hybrid-uav-defense.pptx](indi-hybrid-uav-defense.pptx)
 
-This keeps the repository readable without publishing the full presentation file.
+The README at the repository root keeps only a few representative visuals so that the project remains easy to scan quickly.

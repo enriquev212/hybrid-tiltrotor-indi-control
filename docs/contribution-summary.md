@@ -15,7 +15,7 @@ The work presented here is at system and control-architecture level:
 
 ## Public Scope
 
-This repository contains a redacted overview of the work. It does not contain the complete simulator, detailed controller implementation, full report archive, full defense slide deck, or raw simulation logs.
+This repository contains a public overview of the work, together with the complete RP report and final defense deck. It does not contain the complete simulator, detailed controller implementation, tuning files, or raw simulation logs.
 
 ## Collaboration Context
 

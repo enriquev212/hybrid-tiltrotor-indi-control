@@ -1,8 +1,8 @@
 # INDI Control for Hybrid Tilt-Rotor UAVs
 
-Public overview of a Research Project on cascaded Incremental Nonlinear Dynamic Inversion (INDI) control for hybrid tilt-rotor UAVs.
+Compact public entry point for a Research Project on cascaded Incremental Nonlinear Dynamic Inversion (INDI) control for hybrid tilt-rotor UAVs.
 
-This repository presents the project at architecture and results level. It intentionally omits the full simulator source, detailed controller implementation, tuning files, raw logs, complete report, and complete defense deck.
+This repository is intended for quick external review: it includes the full RP report, the final defense deck, a short technical summary, and a small set of representative visuals. It intentionally omits the full simulator source, detailed controller implementation, tuning files, and raw logs.
 
 ![Real simulation view of the tilt-rotor model](docs/assets/hero/simulation-view.gif)
 
@@ -34,10 +34,10 @@ The public material focuses on the parts that can be shown without releasing the
 
 | Document | Purpose |
 |---|---|
+| [Full report](docs/report/indi-research-project-report.pdf) | Complete Research Project report |
+| [Defense deck](docs/slides/indi-hybrid-uav-defense.pptx) | Final PowerPoint defense presentation |
 | [Contribution summary](docs/contribution-summary.md) | Role and contribution scope |
 | [Technical summary](docs/technical-summary.md) | Architecture-level technical explanation |
-| [Report note](docs/report/README.md) | Why the full report is not mirrored |
-| [Slides note](docs/slides/README.md) | Why the full defense deck is not mirrored |
 
 ## Selected Figures
 
@@ -54,22 +54,12 @@ The public material focuses on the parts that can be shown without releasing the
   </tr>
   <tr>
     <td width="50%">
-      <img src="docs/assets/figures/quadrotor-tracking-overview.png" alt="Quadrotor tracking benchmark">
-      <br><strong>Benchmark and real-flight tracking comparison</strong>
-    </td>
-    <td width="50%">
       <img src="docs/assets/figures/baseline-cruise.png" alt="Cruise baseline tracking">
-      <br><strong>Baseline cruise tracking response</strong>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="docs/assets/figures/control-effort-cruise.png" alt="Cruise control effort">
-      <br><strong>Control effort during cruise</strong>
+      <br><strong>Cruise tracking response</strong>
     </td>
     <td width="50%">
       <p><strong>Public-release note</strong></p>
-      <p>Only a small representative subset of figures is included. Full implementation files and complete project deliverables are intentionally excluded.</p>
+      <p>Only the most representative visuals are shown on this page. The full report and defense deck are included above; implementation files remain excluded.</p>
     </td>
   </tr>
 </table>
@@ -81,8 +71,6 @@ This public overview does not include:
 - full Python simulator source;
 - detailed controller implementation files;
 - configuration and tuning files;
-- complete report PDF;
-- complete defense PowerPoint;
 - raw simulation logs or datasets;
 - third-party reference papers;
 - collaborator files that are not necessary for public context.
