@@ -25,6 +25,45 @@ The controller is a cascaded INDI architecture:
 
 INDI is useful here because it corrects commands from the measured or estimated acceleration response instead of requiring exact inversion of the full nonlinear model. This is important for a hybrid tilt-rotor whose dynamics change across the envelope and for tethered flight, where the cable behaves as a structured external disturbance.
 
+## Key Equations
+
+In the report notation, the outer and inner loops use local incremental
+effectiveness models:
+
+```math
+\Delta\ddot{\boldsymbol{\xi}} \approx G_o\,\Delta u_o,
+\qquad
+\Delta\nu_i \approx B_i\,\Delta\delta .
+```
+
+The constrained weighted least-squares allocator solves the active virtual
+control demand while respecting command limits:
+
+```math
+\begin{aligned}
+\Delta u^\star
+&=
+\arg\min_{\Delta u}\;
+\gamma^2 \left\|W_\nu\left(G\,\Delta u-\Delta\nu\right)\right\|_2^2
++
+\left\|W_u\left(\Delta u-\Delta u_p\right)\right\|_2^2 \\
+&\text{subject to}\quad
+\Delta u_{\min} \le \Delta u \le \Delta u_{\max}.
+\end{aligned}
+```
+
+The ground-anchored cable is modelled as a unilateral axial spring-damper. For
+segment `i`, with axial rate
+`\dot{\ell}_i = (v_{i+1}-v_i)\cdot e_i`, the tension law is:
+
+```math
+T_i =
+\begin{cases}
+\max\!\left(k(\ell_i-\ell_0)+d\dot{\ell}_i,\,0\right), & \ell_i>\ell_0,\\
+0, & \ell_i \le \ell_0.
+\end{cases}
+```
+
 ## Evaluation
 
 The report evaluates the controller through:
