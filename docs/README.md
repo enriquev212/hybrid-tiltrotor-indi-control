@@ -5,17 +5,22 @@ research project.
 
 ## Reading Order
 
-1. [Research overview](research-overview.md) - context, problem statement,
-   modelling approach and contribution narrative.
-2. [Technical summary](technical-summary.md) - compact controller-focused
-   description of the system, INDI loops and WLS allocation.
-3. [Results summary](results-summary.md) - quantitative outcomes from the
-   free-flight, tethered-flight and benchmark studies.
-4. [Full report](report/indi-research-project-report.pdf) - complete academic
-   deliverable.
-5. [Defense deck](https://github.com/enriquev212/hybrid-tiltrotor-indi-control/releases/download/project-materials-v1/indi-hybrid-uav-defense.pptx) -
-   final presentation.
-6. [References](references.md) - bibliography used in the report.
+- [Research overview](research-overview.md) - Motivation, modelling approach
+  and project context.
+- [Technical summary](technical-summary.md) - Cascaded INDI loops, local
+  effectiveness model and constrained WLS allocation.
+- [Results summary](results-summary.md) - Envelope limits, tethered RMSE,
+  sensitivity study and the PID-vs-INDI benchmark.
+- [Contribution summary](contribution-summary.md) - Scope of the collaborative
+  work and what the public version covers.
+- [References](references.md) - Bibliography used in the report.
+
+## Project Materials
+
+- [Full report PDF](report/indi-research-project-report.pdf) - Complete
+  academic deliverable.
+- [Final presentation PPTX](https://github.com/enriquev212/hybrid-tiltrotor-indi-control/releases/download/project-materials-v1/indi-hybrid-uav-defense.pptx) -
+  Final defense deck.
 
 ## Folder Contents
 

@@ -58,11 +58,15 @@ how sensitive that behaviour is to cable and vehicle parameters.
 
 ## Documentation
 
-- [Research overview, modelling approach, and project motivation](docs/research-overview.md)
-- [Technical summary of the cascaded INDI/WLS control architecture](docs/technical-summary.md)
-- [Results, sensitivity study, and PID-vs-INDI benchmark](docs/results-summary.md)
-- [Contribution scope and public repository notes](docs/contribution-summary.md)
-- [References](docs/references.md)
+- [Research overview](docs/research-overview.md) - Motivation, modelling
+  approach and project context.
+- [Technical summary](docs/technical-summary.md) - Cascaded INDI loops, local
+  effectiveness model and constrained WLS allocation.
+- [Results summary](docs/results-summary.md) - Envelope limits, tethered RMSE,
+  sensitivity study and the PID-vs-INDI benchmark.
+- [Contribution summary](docs/contribution-summary.md) - Scope of the
+  collaborative work and what the public version covers.
+- [References](docs/references.md) - Bibliography used in the report.
 
 ## Repository Layout
 
