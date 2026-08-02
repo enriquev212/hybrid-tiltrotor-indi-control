@@ -11,8 +11,8 @@ Curated public figures from the RP report and defense deck.
 - `figures/cable-sensitivity-stability.png`: closed-loop stability map for
   ±15% parameter perturbations.
 - `results/`: result figures used by `docs/results-summary.md`, including
-  free-flight envelope, nominal tethered response, cable sensitivity and
-  actuator-effort plots.
+  free-flight envelope, nominal tethered response, cable sensitivity,
+  actuator-effort and quadrotor benchmark plots.
 
 The full figure set remains in the report and presentation. Raw simulation
 outputs and logs are not included here.

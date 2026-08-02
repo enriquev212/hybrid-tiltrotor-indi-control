@@ -89,4 +89,10 @@ The appendix includes a PID-vs-INDI benchmark on a quadrotor platform.
 | Simulation | 0.481 m | 0.143 m |
 | Real flight | 0.145 m | 0.149 m |
 
+![Quadrotor PID-vs-INDI benchmark](assets/results/quadrotor-benchmark-tracking.png)
+
+The benchmark plot compares horizontal tracking and position-error norm in
+simulation and real flight. It supports the implementation path while keeping the
+main tethered-hybrid conclusions separate from the auxiliary quadrotor case.
+
 The real-flight result is interpreted cautiously: it shows the INDI implementation is viable and not more aggressive in command activity, but it is not claimed as full validation of the hybrid tethered system.
