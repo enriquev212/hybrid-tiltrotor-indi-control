@@ -50,7 +50,8 @@ The cable sensitivity study perturbs one parameter at a time by ±15%.
 | Reference speed | Dominant driver of tracking error and tension oscillation among stable runs |
 | Cable damping and diameter | Weaker influence in the tested range |
 
-The main result is that the nominal case is accurate but close to the taut/slack boundary. This creates thin robustness margins, so future work should address cable pre-tension, load-aware trim and tether uncertainty.
+The main result is that the nominal case is accurate but close to the
+taut/slack boundary. This creates thin robustness margins.
 
 ![Cable sensitivity stability map](assets/results/cable-sensitivity-stability.png)
 
