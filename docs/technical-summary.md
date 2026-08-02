@@ -52,9 +52,16 @@ control demand while respecting command limits:
 \end{aligned}
 ```
 
-The ground-anchored cable is modelled as a unilateral axial spring-damper. For
-segment `i`, with axial rate
-`\dot{\ell}_i = (v_{i+1}-v_i)\cdot e_i`, the tension law is:
+The ground-anchored cable is modelled as a unilateral axial spring-damper.
+Main symbols: $T_i$ is segment tension, $\ell_i$ current length, $\ell_0$ rest
+length, $\dot{\ell}_i$ axial extension rate, $e_i$ axial unit vector, $v_i$ node
+velocity, and $k,d$ segment stiffness and damping.
+
+```math
+\dot{\ell}_i = (v_{i+1}-v_i)\cdot e_i
+```
+
+The tension law is:
 
 ```math
 T_i =
