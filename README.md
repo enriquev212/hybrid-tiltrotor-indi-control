@@ -58,15 +58,13 @@ how sensitive that behaviour is to cable and vehicle parameters.
 
 ## Documentation
 
-- [Research overview](docs/research-overview.md) - Motivation, modelling
-  approach and project context.
-- [Technical summary](docs/technical-summary.md) - Cascaded INDI loops, local
-  effectiveness model and constrained WLS allocation.
-- [Results summary](docs/results-summary.md) - Envelope limits, tethered RMSE,
-  sensitivity study and the PID-vs-INDI benchmark.
-- [Contribution summary](docs/contribution-summary.md) - Scope of the
-  collaborative work and what the public version covers.
-- [References](docs/references.md) - Bibliography used in the report.
+| Document | Why open it |
+|---|---|
+| [Research overview](docs/research-overview.md) | Motivation, modelling approach and project context. |
+| [Technical summary](docs/technical-summary.md) | Cascaded INDI loops, local effectiveness model and constrained WLS allocation. |
+| [Results](docs/results-summary.md) | Envelope limits, tethered RMSE, sensitivity study and the PID-vs-INDI benchmark. |
+| [Contribution summary](docs/contribution-summary.md) | Scope of the collaborative work and what the public version covers. |
+| [References](docs/references.md) | Bibliography used in the report. |
 
 ## Repository Layout
 

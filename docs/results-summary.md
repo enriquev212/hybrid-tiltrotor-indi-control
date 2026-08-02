@@ -96,3 +96,14 @@ simulation and real flight. It supports the implementation path while keeping th
 main tethered-hybrid conclusions separate from the auxiliary quadrotor case.
 
 The real-flight result is interpreted cautiously: it shows the INDI implementation is viable and not more aggressive in command activity, but it is not claimed as full validation of the hybrid tethered system.
+
+## Future Work
+
+- Increase robustness to tether uncertainty through cable pre-tension, load-aware
+  trim and tension-aware control logic.
+- Study combined parameter perturbations and slack/taut transitions, rather than
+  only one-at-a-time sensitivity cases.
+- Validate the approach on higher-fidelity hybrid tilt-rotor logs or tethered
+  experimental runs.
+- Extend the modelling and control framework toward multi-UAV suspended-payload
+  transport.

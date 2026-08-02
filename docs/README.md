@@ -5,15 +5,13 @@ research project.
 
 ## Reading Order
 
-- [Research overview](research-overview.md) - Motivation, modelling approach
-  and project context.
-- [Technical summary](technical-summary.md) - Cascaded INDI loops, local
-  effectiveness model and constrained WLS allocation.
-- [Results summary](results-summary.md) - Envelope limits, tethered RMSE,
-  sensitivity study and the PID-vs-INDI benchmark.
-- [Contribution summary](contribution-summary.md) - Scope of the collaborative
-  work and what the public version covers.
-- [References](references.md) - Bibliography used in the report.
+| Document | Why open it |
+|---|---|
+| [Research overview](research-overview.md) | Motivation, modelling approach and project context. |
+| [Technical summary](technical-summary.md) | Cascaded INDI loops, local effectiveness model and constrained WLS allocation. |
+| [Results](results-summary.md) | Envelope limits, tethered RMSE, sensitivity study and the PID-vs-INDI benchmark. |
+| [Contribution summary](contribution-summary.md) | Scope of the collaborative work and what the public version covers. |
+| [References](references.md) | Bibliography used in the report. |
 
 ## Project Materials
 
