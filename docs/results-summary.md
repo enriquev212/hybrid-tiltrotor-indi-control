@@ -13,6 +13,12 @@ The cable-free vehicle tracks circular references accurately inside a bounded en
 
 Inside the stable region, the vehicle behaves like a coordinated-turn aircraft: bank angle follows the lateral-acceleration demand while pitch remains small and rotor tilt provides forward propulsion.
 
+![Free-flight envelope](assets/results/free-flight-envelope.png)
+
+The envelope study shows the tested combinations of reference speed and radius,
+with instability appearing as the lateral-acceleration demand approaches the
+control authority available to the vehicle.
+
 ## Nominal Tethered Orbit
 
 The nominal tethered case uses a circular orbit around the ground anchor:
@@ -25,6 +31,12 @@ The nominal tethered case uses a circular orbit around the ground anchor:
 | Simulation horizon | 60 s |
 
 The tethered UAV tracks the reference orbit after the initial transient. In the sensitivity-window metrics, the nominal case has RMSE 0.087 m and mean cable tension 6.21 N with peak tension 6.5 N. The cable tension varies periodically, so the tether acts as a structured disturbance rather than a constant force.
+
+![Nominal tethered response](assets/results/nominal-tethered-response.png)
+
+The nominal tethered run remains close to the circular reference after the
+initial transient, while the cable tension settles into a periodic load rather
+than a constant offset.
 
 ## Cable Sensitivity
 
@@ -40,6 +52,14 @@ The cable sensitivity study perturbs one parameter at a time by ±15%.
 
 The main result is that the nominal case is accurate but close to the taut/slack boundary. This creates thin robustness margins, so future work should address cable pre-tension, load-aware trim and tether uncertainty.
 
+![Cable sensitivity stability map](assets/results/cable-sensitivity-stability.png)
+
+![Cable sensitivity coefficients](assets/results/cable-sensitivity-coefficients.png)
+
+The stability map highlights which perturbations cause loss of attitude, while
+the sensitivity coefficients separate effects on tracking RMSE, mean tension and
+tension oscillation among the cases that remain stable.
+
 ## Actuator Effort
 
 The tether changes where effort is spent:
@@ -53,6 +73,12 @@ The tether changes where effort is spent:
 | Rotor-speed command activity | 5.2 rad/s² | 9.4 rad/s² |
 
 The cable increases thrust demand in hover, but during cruise it contributes inward force toward the anchor and reduces the mean thrust required for the circular orbit. It also shifts the rotor-tilt trim by roughly 15°.
+
+![Actuator effort comparison](assets/results/actuator-effort-cruise.png)
+
+The effort comparison shows the main trim shift caused by the tether: higher
+hover thrust demand, lower mean thrust in cruise, and different rotor-tilt
+angles once the cable contributes inward force.
 
 ## Quadrotor Benchmark
 
