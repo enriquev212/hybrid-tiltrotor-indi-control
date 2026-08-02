@@ -64,20 +64,6 @@ how sensitive that behaviour is to cable and vehicle parameters.
 - [Contribution scope and public repository notes](docs/contribution-summary.md)
 - [References](docs/references.md)
 
-## Representative Figures
-
-### Cascaded INDI/WLS Architecture
-
-<img src="docs/assets/figures/control-architecture.png" alt="Cascaded INDI control architecture">
-
-### Nominal Tethered Orbit
-
-<img src="docs/assets/figures/nominal-tethered-flight.png" alt="Nominal tethered flight tracking error and cable tension">
-
-### Cable Sensitivity and Stability
-
-<img src="docs/assets/figures/cable-sensitivity-stability.png" alt="Closed-loop stability map under cable and vehicle parameter perturbations">
-
 ## Repository Layout
 
 ```text

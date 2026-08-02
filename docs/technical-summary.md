@@ -21,6 +21,8 @@ The controller is a cascaded INDI architecture:
 3. The inner loop tracks attitude and angular-rate response using incremental control.
 4. A constrained WLS allocation distributes the virtual demand across the four rotor thrusts and two tilt angles.
 
+![Cascaded INDI/WLS architecture](assets/figures/control-architecture.png)
+
 INDI is useful here because it corrects commands from the measured or estimated acceleration response instead of requiring exact inversion of the full nonlinear model. This is important for a hybrid tilt-rotor whose dynamics change across the envelope and for tethered flight, where the cable behaves as a structured external disturbance.
 
 ## Evaluation
