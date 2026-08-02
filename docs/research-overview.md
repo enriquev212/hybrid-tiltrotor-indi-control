@@ -16,23 +16,20 @@ Second, the tether is not a simple constant load. It can go slack or taut, appli
 
 ## Modelling Approach
 
-The report builds a unified nonlinear plant model with:
+The report builds a unified nonlinear plant model for the hybrid tilt-rotor and
+its ground-anchored tether. At overview level, the important point is that the
+vehicle, actuators, aerodynamics and segmented cable are simulated as a coupled
+system rather than as separate effects.
 
-- rigid-body translation and rotation;
-- rotor thrust and tilt-angle mapping;
-- fixed-wing aerodynamic forces and moments;
-- actuator dynamics and physical limits;
-- segmented ground-anchored cable dynamics.
-
-The cable is modelled as a lumped-mass chain with tension-only spring-damper segments. This allows slack/taut transitions to emerge from the simulation rather than being imposed as a fixed external force.
+The detailed model components and cable tension law are summarized in the
+[technical summary](technical-summary.md).
 
 ## Control Approach
 
-The controller uses cascaded Incremental Nonlinear Dynamic Inversion:
-
-- the outer loop generates acceleration-level guidance commands from position and velocity errors;
-- the inner loop stabilizes attitude and angular-rate dynamics;
-- WLS allocation distributes the requested increments across rotor thrust and rotor tilt commands while respecting limits.
+The controller uses cascaded Incremental Nonlinear Dynamic Inversion with
+constrained WLS allocation across rotor thrust and rotor tilt commands. The full
+loop structure, allocation problem and cable equations are given in the
+[technical summary](technical-summary.md).
 
 INDI is well matched to this problem because it relies on measured or estimated acceleration response and local control effectiveness, instead of requiring perfect cancellation of the complete nonlinear model.
 
