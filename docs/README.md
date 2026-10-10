@@ -10,6 +10,7 @@ research project.
 | [Research overview](research-overview.md) | Motivation, modelling approach and project context. |
 | [Technical summary](technical-summary.md) | Cascaded INDI loops, local effectiveness model and constrained WLS allocation. |
 | [Results](results-summary.md) | Envelope limits, tethered RMSE, sensitivity study and the PID-vs-INDI benchmark. |
+| [Elevon extension](elevon-extension.md) | October continuation: surface mixing, sequential allocation and preliminary checks. |
 | [Contribution summary](contribution-summary.md) | Scope of the collaborative work and what the public version covers. |
 | [References](references.md) | Bibliography used in the report. |
 

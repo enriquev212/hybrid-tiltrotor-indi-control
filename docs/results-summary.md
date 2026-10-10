@@ -1,6 +1,8 @@
 # Results Summary
 
-This page summarizes the main results from the report and final presentation.
+This page summarizes the June 2026 results from the report and final
+presentation. The later [elevon extension](elevon-extension.md) has a separate,
+preliminary verification snapshot; it is not part of this campaign.
 
 ## Free-Flight Envelope
 
@@ -108,3 +110,7 @@ The real-flight result is interpreted cautiously: it shows the INDI implementati
   experimental runs.
 - Extend the modelling and control framework toward multi-UAV suspended-payload
   transport.
+
+The [elevon continuation](elevon-extension.md#limits-and-next-checks) adds a
+surface/rotor allocation path, but its preliminary cable-free checks do not
+replace the tethered robustness or experimental validation steps above.

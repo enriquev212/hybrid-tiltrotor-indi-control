@@ -5,7 +5,9 @@ Project. It is not a full simulator release and it is not a single-author projec
 release.
 
 Architecture-level descriptions, selected figures, the Research Project report,
-the final defense deck and a report bibliography are included.
+the final defense deck and a report bibliography are included. A separately
+identified October 2026 elevon extension documents preliminary simulation
+checks and their limitations; it does not amend the original report.
 
 No open-source license is currently included. Unless the project owners add a
 license or grant permission separately, reuse and redistribution rights should

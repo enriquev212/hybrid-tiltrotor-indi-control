@@ -50,3 +50,10 @@ The report follows the same story as the defense deck:
 The nominal tethered vehicle tracks the circular orbit accurately, showing that INDI can reject the periodic cable disturbance in the tested case. However, the sensitivity analysis shows that the stable regime is narrow: cable stiffness, cable length, cable linear density and vehicle mass can push the system from bounded tracking into instability.
 
 The project therefore establishes a useful modelling and control basis, but also identifies the next technical challenge: robustness to tether uncertainty before extending the framework to multi-UAV suspended-payload transport.
+
+## Post-RP Continuation
+
+The [October elevon extension](elevon-extension.md) explores coordinating
+aerodynamic surfaces with the existing rotor/tilt allocator in cable-free
+simulation. Its preliminary checks and baseline-model limitations are kept
+separate from the June report's evaluation.

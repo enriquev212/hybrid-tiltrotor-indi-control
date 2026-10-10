@@ -14,5 +14,9 @@ This repository presents a collaborative academic Research Project. The report a
 
 ## Scope Note
 
+The October [elevon extension](elevon-extension.md) adds surface mixing,
+first-order servo dynamics and sequential surface/rotor allocation. It is a
+post-RP simulation continuation, not a result claimed in the June report.
+
 For what the public repository includes and excludes, see
 [Public Scope](../README.md#public-scope).

@@ -34,6 +34,11 @@ The controller is a cascaded INDI architecture:
 
 ![Cascaded INDI/WLS architecture](assets/figures/control-architecture.png)
 
+This diagram describes the June RP rotor/tilt architecture. The later
+[elevon extension](elevon-extension.md#allocation-strategy) adds a sequential
+surface-allocation stage ahead of the existing WLS; it is not a joint
+eight-actuator allocator.
+
 The architecture is treated as a local incremental-effectiveness problem:
 outer- and inner-loop virtual demands are converted into actuator increments and
 then allocated under constraints.
